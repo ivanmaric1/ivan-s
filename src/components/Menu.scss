@@ -1,0 +1,64 @@
+.Menu {
+  background-image: url(../img/background.png);
+  width: 250px;
+  height: 100vh;
+  padding: 5vh 1rem;
+  box-sizing: border-box;
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-yellow);
+
+  &-logo {
+    width: 100%;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--light);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  &-footer {
+    font-size: 0.9rem;
+    width: 90%;
+    &-socials {
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+        color: var(--light-yellow);
+      }
+    }
+    hr {
+      background-color: var(--main-yellow);
+      border: none;
+      height: 4px;
+    }
+    &-credits {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        color: var(--light);
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: var(--light-yellow);
+      }
+    }
+  }
+}

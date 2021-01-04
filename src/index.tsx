@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import Pizza from './components/Pizza';
+import './index.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <p>lalala</p>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Pizza />
+  </BrowserRouter>,
   document.getElementById('root')
 );

@@ -16,7 +16,6 @@
   }
 
   &-list {
-    list-style: none;
     padding: 0;
     margin: auto;
     display: flex;
@@ -24,6 +23,17 @@
     color: var(--light);
     font-size: 1.2rem;
     text-align: center;
+    line-height: 1.6;
+
+    a {
+      text-decoration: none;
+      color: var(--light);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--main-yellow);
+      }
+    }
   }
 
   &-footer {

@@ -8,11 +8,21 @@ const Menu = () => {
     <div className="Menu">
       <img src={logo} alt="logo" className="Menu-logo" />
       <ul className="Menu-list">
-        <NavLink to="/">HOME</NavLink>
-        <NavLink to="/menu">MENU</NavLink>
-        <NavLink to="/pizzas">PIZZAS</NavLink>
-        <NavLink to="/about">ABOUT US</NavLink>
-        <NavLink to="/contact">CONTACT</NavLink>
+        <NavLink to="/" activeClassName="active">
+          HOME
+        </NavLink>
+        <NavLink to="/menu" activeClassName="active">
+          MENU
+        </NavLink>
+        <NavLink to="/pizzas" activeClassName="active">
+          PIZZAS
+        </NavLink>
+        <NavLink to="/about" activeClassName="active">
+          ABOUT US
+        </NavLink>
+        <NavLink to="/contact" activeClassName="active">
+          CONTACT
+        </NavLink>
       </ul>
       <footer className="Menu-footer">
         <ul className="Menu-footer-socials">

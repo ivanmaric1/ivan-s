@@ -13,3 +13,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background: var(--main-yellow);
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 0.8;
+  transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 20px;
+}

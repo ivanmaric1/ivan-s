@@ -1,6 +1,6 @@
 .Menu {
   background-image: url(../img/background.png);
-  width: 250px;
+  width: 300px;
   height: 100vh;
   padding: 5vh 1rem;
   box-sizing: border-box;
@@ -12,12 +12,13 @@
   color: var(--light-yellow);
 
   &-logo {
-    width: 100%;
+    width: 90%;
   }
 
   &-list {
     padding: 0;
-    margin: auto;
+    height: 100%;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     color: var(--light);
@@ -30,7 +31,7 @@
       color: var(--light);
       cursor: pointer;
 
-      &:hover {
+      &.active {
         color: var(--main-yellow);
       }
     }

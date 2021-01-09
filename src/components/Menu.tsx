@@ -6,9 +6,14 @@ import './Menu.scss';
 const Menu = () => {
   return (
     <div className="Menu">
-      <img src={logo} alt="logo" className="Menu-logo" />
+      <NavLink exact to="/">
+        <div className="Menu-logo">
+          <img src={logo} alt="logo" />
+        </div>
+      </NavLink>
+
       <ul className="Menu-list">
-        <NavLink to="/" activeClassName="active">
+        <NavLink exact to="/" activeClassName="active">
           HOME
         </NavLink>
         <NavLink to="/menu" activeClassName="active">

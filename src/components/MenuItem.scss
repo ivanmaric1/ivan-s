@@ -1,0 +1,15 @@
+.MenuItem {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-info {
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+
+  &-price {
+    color: var(--main-yellow);
+  }
+}

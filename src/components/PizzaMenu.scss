@@ -4,6 +4,7 @@
   background: url(../img/menu.jpg) no-repeat center center/cover;
   font-family: var(--font);
   padding-top: 15vh;
+  font-weight: 300;
 
   &-headline {
     display: flex;
@@ -41,7 +42,49 @@
     width: 50%;
     background-color: var(--light);
     overflow: auto;
-    height: 75vh;
+    height: 70vh;
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--secondary-font);
+    animation: opacity 0.5s;
+
+    &-menu {
+      font-weight: 500;
+      font-size: 1.1rem;
+      ul {
+        list-style: none;
+        border-bottom: 1px solid #000;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li {
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          color: var(--main-yellow);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .PizzaMenu {
+    &-content {
+      width: 80%;
+    }
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

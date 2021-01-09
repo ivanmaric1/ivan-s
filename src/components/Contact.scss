@@ -51,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: 300;
+    animation: opacity 0.5s;
 
     &-info {
       padding: 1rem;

@@ -12,7 +12,17 @@
   color: var(--light-yellow);
 
   &-logo {
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 90%;
+      margin-right: 0;
+      transition: all 0.4s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 
   &-list {
@@ -30,6 +40,11 @@
       text-decoration: none;
       color: var(--light);
       cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        opacity: 0.6;
+      }
 
       &.active {
         color: var(--main-yellow);

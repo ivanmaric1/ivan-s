@@ -96,6 +96,50 @@
         border: none;
         border: 3px solid #000;
         cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          border: 3px solid var(--main-yellow);
+          color: var(--main-yellow);
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .Contact {
+    padding-top: 5vh;
+    font-size: 0.8rem;
+    height: 100vh;
+
+    &-content {
+      width: auto;
+      height: 65%;
+      padding: 1rem;
+      flex-direction: column;
+
+      &-info {
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 1;
+      }
+      &-form {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+          margin: 0.5rem;
+          width: 80%;
+          font-size: 1.1rem;
+        }
+
+        textarea {
+          height: 100px;
+        }
       }
     }
   }

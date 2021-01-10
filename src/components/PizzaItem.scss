@@ -1,0 +1,14 @@
+.PizzaItem {
+  padding: 0 1rem;
+  display: inline-block;
+  width: 35%;
+  &-info {
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+
+  &-price {
+    color: var(--main-yellow);
+  }
+}

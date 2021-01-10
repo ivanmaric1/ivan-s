@@ -31,14 +31,22 @@
   }
 }
 
-@keyframes changeBg {
-  0% {
-    background-image: url(../img/Classic.jpg);
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .Home {
+    &-content {
+      font-size: 3.5rem;
+    }
   }
-  50% {
+}
+
+@keyframes changeBg {
+  33% {
+    background-image: url(../img/Margherita.jpg);
+  }
+  66% {
     background-image: url(../img/Mexican.jpg);
   }
-  100% {
-    background-image: url(../img/Margherita.jpg);
+  99% {
+    background-image: url(../img/Classic.jpg);
   }
 }

@@ -74,8 +74,10 @@
 
 @media screen and (min-width: 200px) and (max-width: 1000px) {
   .PizzaMenu {
+    padding-top: 5vh;
     &-content {
-      width: 80%;
+      width: auto;
+      padding: 1rem;
     }
   }
 }
